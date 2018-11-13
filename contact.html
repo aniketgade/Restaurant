@@ -7,15 +7,75 @@ Most recent revision:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Page</title>
+    <title>Contact Us</title>
 </head>
 <body>
 
-<header><h1>Contact Us</h1></header>
+<header style="text-align: center"><h1>Crazy Burgers</h1></header>
 <hr/>
+
+<section id="pageLinks">
 
 <nav>
     <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
         <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
         <a href="">Contact Us</a></p>
 </nav>
+
+</section>
+
+<hr/>
+
+<section id="form">
+
+    <form action="submit.html" method="post" style="text-align: center">
+
+        <label for="name">Name:</label>&nbsp;
+        <input type="text" id="name" name="name"><br/><br/>
+        <label for="email">Email:</label>&nbsp;
+        <input type="email" id="email" name="email"><br/><br/>
+        <label for="phone">Phone:</label>&nbsp;
+        <input type="number" id="phone" name="phone"><br/><br/>
+        <label for="Inquiry">Reason for Inquiry:</label>&nbsp;
+        <select name="Inquiry" id="Inquiry">
+        <option value="catering" selected>Catering</option>
+        <option value="privateParty">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+        </select><br/><br/>
+        <label for="info">Additional Information:</label>&nbsp;
+        <textarea name="Info" id="Info" cols="30" rows="10"></textarea><br/><br/>
+
+        <label>Have you been to the restaurant?</label>&nbsp;
+        <input type="radio" id="no" name="question" value="no">
+        <label for="no">No</label>&nbsp;&nbsp;
+        <input type="radio" id="yes" name="question" value="yes">
+        <label for="yes">Yes</label><br/><br/>
+
+        <label>Best Days to contact you:</label>&nbsp;
+        <input type="checkbox" id="M" name="contactDays" value="M">
+        <label for="M">M</label>
+        <input type="checkbox" id="T" name="contactDays" value="T">
+        <label for="T">T</label>
+        <input type="checkbox" id="W" name="contactDays" value="W">
+        <label for="W">W</label>
+        <input type="checkbox" id="Th" name="contactDays" value="Th">
+        <label for="Th">Th</label>
+        <input type="checkbox" id="F" name="contactDays" value="F">
+        <label for="F">F</label>
+
+        <br/><br/>
+
+        <input type="submit" value="Send Request" name="submit">
+
+    </form>
+
+</section>
+
+
+<footer style="text-align: center">
+    <hr/>
+    
+    <p>101 Wonder Street, Wonderville, CA 99887</p>
+    <p>123-456-7890</p>
+</footer>
