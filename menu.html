@@ -8,30 +8,37 @@ Most recent revision:
 <html lang="en">
 <head>
     <title>Menu Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
 
-<header style="text-align: center"><h1>Crazy Burgers</h1></header>
-<hr/>
+    <!-- Link to external css library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body style="margin: 0 auto"> <!-- Question - why doesn't this setting work from restaurantStyles.css ? This is already in css file but only works on index.html -->
+
+<header style="text-align: center" class="jumbotron"><h1>Crazy Burgers</h1></header>
+
 
 <section id="pageLinks">
 
     <nav>
-        <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
-            <a href="">Menu</a>&nbsp;&nbsp;&nbsp;
-            <a href="contact.html">Contact Us</a>
+        <p><a href="index.html" class="btn badge-pill">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="btn badge-pill">Menu</a>&nbsp;&nbsp;&nbsp;
+            <a href="contact.html" class="btn badge-pill">Contact Us</a>
         </p>
     </nav>
-    <hr/>
+    <br/>
 </section>
 
-<section id="menuItemsSection">
-    <div class="Parent" style="display: flex" > <!-- For Horizontal aligning of div blocks -->
-<div class="menuItem" >
+<div class="container menuBody" >
+
+    <div class="row"> <!-- For Horizontal aligning of div blocks -->
+
+        <div class="menuItem col-lg-4" >
 
 
-        <strong>Burger and Fries</strong><br/>
+        <h4>Burger and Fries</h4>
         An American Classic <br/>
         Your choice - with or without cheese <br/>
         Pickle, onion, tomato, and lettuce <br/>
@@ -40,9 +47,9 @@ Most recent revision:
 
 </div>
 
-    <div class="menuItem">
+    <div class="menuItem col-lg-4">
 
-        <strong>Hot Dog and Chips</strong><br/>
+        <h4>Hot Dog and Chips</h4>
         A Summer Classic! <br/>
         Your Choice - white or wheat bun <br/>
         Relish, mustard, and ketchup <br/>
@@ -51,8 +58,8 @@ Most recent revision:
 
     </div>
 
-        <div class="menuItem">
-            <strong>Italian Sausage and Peppers</strong><br/>
+        <div class="menuItem col-lg-4">
+            <h4>Italian Sausage and Peppers</h4>
             An All-Time Favorite! <br/>
             Your Choice - mild or spicy Cole Slaw <br/>
             Served with garlic mashers <br/>
@@ -61,10 +68,11 @@ Most recent revision:
 
     </div>
     <br/> <br/>
-    <div class="Parent2" style="display: flex"> <!-- For Horizontal aligning of div blocks -->
-        <div class="menuItem">
 
-            <strong>Tenderloin Sandwich and Chips</strong><br/>
+    <div class="row"> <!-- For Horizontal aligning of div blocks --> <!-- For Horizontal aligning of div blocks -->
+        <div class="menuItem col-lg-4">
+
+            <h4>Tenderloin Sandwich and Chips</h4>
             Really Hits the Spot! <br/>
             Plain or Sesame Seed Bun <br/>
             Pickle, onion, tomato, and lettuce <br/>
@@ -73,9 +81,9 @@ Most recent revision:
 
         </div>
 
-        <div class="menuItem">
+        <div class="menuItem col-lg-4">
 
-            <strong>House Salad</strong><br/>
+            <h4>House Salad</h4>
             On the Lighter Side <br/>
             Your Choice - with or without cheese <br/>
             Iceberg lettuce, tomatoes, peppers <br/>
@@ -85,9 +93,9 @@ Most recent revision:
 
         </div>
 
-        <div class="menuItem">
+        <div class="menuItem col-lg-4">
 
-            <strong>Brisket Sandwich and Fries</strong><br/>
+            <h4>Brisket Sandwich and Fries</h4>
             A Taste of Texas! <br/>
             Smoked Brisket on thick-cut<br/>
             Texas Toast<br/>
@@ -99,10 +107,47 @@ Most recent revision:
         </div>
 
     </div>
-</section>
+
+    <br/>
+    <!--Question - Table border breaks on Chrome, works on Firefox-->
+    <table>
+
+        <tr>
+            <td style="font-size: x-large; font-weight: bold" >Beverages</td>
+        </tr>
+
+        <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+        </tr>
+        <tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+        </tr>
+        <tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>Iced Tea</td>
+            <td>$1.25</td>
+        </tr>
+    </table>
+</div>
 
 <footer style="text-align: center">
     <hr/>
     <p>101 Wonder Street, Wonderville, CA 99887</p>
     <p>123-456-7890</p>
 </footer>
+
+<!-- Link to external css library, put at the end of page to improve load time -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

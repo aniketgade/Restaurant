@@ -1,0 +1,78 @@
+div.description{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 510px;
+}
+
+/* Background color does not work on section, so I had to wrap section inside Div */
+div.homeBody, div.menuBody, div.formBody{
+    background-color: beige;
+}
+
+body {
+
+    font-family: Arial, helvetica, sans-serif;
+    color: #0d1f2d;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section #image_and_description {
+
+    background-color: pink;
+}
+
+.caption{
+    display: block;
+}
+
+.menuItem{
+
+    text-align: center;
+width:310px;
+}
+
+
+ nav {
+     text-align: center;
+     border-top: thin #5b7d87 solid;
+     border-bottom: thin #5b7d87 solid;
+     padding-top: 12px;
+
+ }
+
+nav a:visited {
+    color: #e4c3ad;
+}
+
+nav .btn {
+    background-color: darkblue;
+    color: lightblue;
+}
+
+nav .btn:hover{
+    font-weight: bold;
+    color: aqua;
+}
+
+table {
+    width: 100%;
+
+    border: 1px solid #0d1f2d;
+
+    padding: 5px 10px;
+}
+
+tr {
+    height: 50px;
+}
+
+/*th {*/
+    /*background-color: #546a7b;*/
+    /*color: #f2eded;*/
+/*}*/
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
