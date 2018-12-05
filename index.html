@@ -13,58 +13,103 @@ Most recent revision:
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+
+    <!-- Link to external css library, can put at the end of page to improve load time -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="styles/restaurantStyles.css">
 </head>
 
 <body>
 
-<header class="jumbotron">
-    <div style="text-align: center;"><h1>Crazy Burgers</h1>
-    </div>
-</header>
+<div class="container">
+
+    <header class="jumbotron">
+        <div style="text-align: center;"><h1>Crazy Burgers</h1>
+        </div>
+    </header>
 
 
-<section id="pageLinks">
+    <section id="pageLinks">
 
-<nav>
-    <p><a href="" class="btn badge-pill">Home</a>&nbsp;&nbsp;&nbsp;
-    <a href="menu.html" class="btn badge-pill">Menu</a>&nbsp;&nbsp;&nbsp;
-    <a href="contact.html" class="btn badge-pill">Contact Us</a></p>
-</nav>
-    <br/>
-</section>
-
-<!-- Background color does not work on section, so I had to wrap section inside Div -->
-<div class="homeBody">
-<section id="image_and_description" style="text-align: center">
+        <nav>
+            <p><a href=""><img src="images/home_icon.png" alt="Home Icon" style="width: 40px; Height: 40px;"/></a>&nbsp;&nbsp;&nbsp;
+                <!--<a href="menu.html" class="btn badge-pill">Menu</a>&nbsp;&nbsp;&nbsp;-->
+                <a href="menu.html"><img src="images/menu_icon.png" alt="Menu Icon" style="width: 40px; Height: 40px;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="contact.html" class="btn badge-pill"><img src="images/contact_icon.png" alt="Contact Icon"
+                                                                   style="width: 40px; Height: 40px;"></a></p>
+        </nav>
+        <br/>
+    </section>
 
 
-    <div class="description">
-        <img src="images/restaurant.jpg" alt="Restaurant Image"><br/>
-        <span class="caption">
-            <p><h4>Restaurant Description</h4></p>
-        <em>Crazy Burger serves American roadhouse food prepared from scratch using fresh ingredients. The spacious, airy interior features modern furniture and old-school charm. Stepping into the saloon-like rooms, guests can sense more than 100 years of hospitality. The proprietors strive to maintain that warm tradition and leave everyone feeling relaxed, well fed and eager to return.</em>
-        </span>
+    <div id="carouselAnnouncements" class="carousel slide" data-ride="carousel">
 
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#carouselAnnouncements" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselAnnouncements" data-slide-to="1"></li>
+            <li data-target="#carouselAnnouncements" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>We're opening a new location!</p>
+            </div>
+            <div class="carousel-item">
+                <p>We're rolling out our seasonal menu, with special options for this season.</p>
+            </div>
+            <div class="carousel-item">
+                <p>The Drink of the Month is SG Special Brew.</p>
+            </div>
         </div>
 
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carouselAnnouncements" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselAnnouncements" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
-</section>
+
+    <!-- Background color does not work on section, so I had to wrap section inside Div -->
+    <div class="homeBody">
+        <section id="image_and_description" style="text-align: center">
+
+
+            <div class="description">
+                <img src="images/restaurant.jpg" alt="Restaurant Image"><br/>
+                <span class="caption">
+            <p><h4>Restaurant Description</h4></p>
+                    <em>Crazy Burger serves American roadhouse food prepared from scratch using fresh ingredients. The spacious, airy interior features modern furniture and old-school charm. Stepping into the saloon-like rooms, guests can sense more than 100 years of hospitality. The proprietors strive to maintain that warm tradition and leave everyone feeling relaxed, well fed and eager to return.</em>
+        </span>
+
+            </div>
+
+
+        </section>
+    </div>
+
+    <footer style="text-align: center">
+        <hr/>
+        <p>101 Wonder Street, Wonderville, CA 99887</p>
+        <p>123-456-7890</p>
+    </footer>
+
+
 </div>
-
-<footer style="text-align: center">
-<hr/>
-<p>101 Wonder Street, Wonderville, CA 99887</p>
-<p>123-456-7890</p>
-</footer>
-
-<!-- Link to external css library, put at the end of page to improve load time -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
 </body>
 </html>

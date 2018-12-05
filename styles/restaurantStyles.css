@@ -10,6 +10,15 @@ div.homeBody, div.menuBody, div.formBody{
     background-color: beige;
 }
 
+div #carouselAnnouncements {
+    background-color: darkblue;
+    color: aqua;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+}
+
 body {
 
     font-family: Arial, helvetica, sans-serif;
@@ -55,6 +64,7 @@ nav .btn:hover{
     font-weight: bold;
     color: aqua;
 }
+
 
 table {
     width: 100%;

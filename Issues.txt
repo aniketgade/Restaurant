@@ -1,0 +1,8 @@
+Carousel - The example on W3schools initially didn't work. Then I found out that Bootstrap4 had different syntax. So I found a W3schools example for Bootstrap4. Even after that I had some issues which were resolved after I matched the 'bootstrap.min.js' from the example.
+
+A similar issue was faced in one of the exercises, LuckySevens where the table functionality was not working as I had not included the bootstrap.min.js file.
+
+Beverages table border does not close - but it shows properly in Mozilla Firefox.
+
+Under the requirements
+point 6 is partially implemented. point 7 is not implemented yet.
